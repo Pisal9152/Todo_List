@@ -1,14 +1,14 @@
-make sure we have installed Metamask, Ganache and Node on our computer
-https://metamask.io
-https://archive.trufflesuite.com/ganache
-https://nodejs.org/en
-open Window powershell and run command ( npm install -g truffle )
-git clone these code or copy code from these directory
-change directory to smart_contract by running command ( cd smart_contract )
-run command ( truffle migrate ) you will see some result shown in your terminal and you have to find contract address
-copy the contract address and past it into react js project
-into client directory you need to go to src/App.jsx
-when you are staying on App.jsx you will see
-replace ( import.meta.env.VITE_CONTRACT_ADDRESS ) with the contract address you have copied from truffle migrate
-change directory to client using command line ( cd client )
-run command ( npm run dev )
+1/ You have to install Node.js, Metamask, and Ganache on your device.
+  . https://nodejs.org/en
+  . https://metamask.io
+  . https://archive.trufflesuite.com/ganache
+
+2/ Open Window powershell: run command(npm install -g truffle).
+
+3/ Copy or git clone this code from these directory. 
+
+4/ Change directory to server: run command(cd server)
+  . Run command(truffle compile) and (truffle migrate) you will see the result shown on your terminal and you have to find "contract address".
+  . Copy this address and past into React.js project(client/src/App.jsx).
+
+5/ Change directory to client: run command(cd client) and (npm run dev).

@@ -163,17 +163,17 @@ const TodoList = ({ contractAddress }) => {
             type="text"
             value={editTaskContent}
             onChange={(e) => setEditTaskContent(e.target.value)}
-            placeholder="Edit task content"
+            placeholder="Enter task content"
           />
-          <button onClick={editTask}>Save Task</button>
+          <button onClick={editTask}>Save</button>
         </div>
       )}
       {tasks.map((task, index) => (
-        <div className="task-container" key={index}>
+        <div className="taskList" key={index}>
           <span>
             {index + 1}. {task.content}
           </span>
-          <div className="btns">
+          <div className="buttons">
             <button onClick={() => toggleCompleted(task.id)}>
               {task.completed ? (
                 <IoCheckmarkDoneSharp />
